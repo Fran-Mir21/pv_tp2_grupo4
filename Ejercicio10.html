@@ -8,18 +8,17 @@
 <body>
     
     <script>
-        let cant=parseInt(prompt('Ingrese la cantidad de números a ingresar:'));
+        let cant=parseInt(prompt("Ingrese la cantidad de números a ingresar:"));
         let numeros= [];
         let suma=0;
         for(let i=0; i<cant; i++){
-         let num= parseInt(prompt(`Ingresa el número ${i + 1}:`));
+         let num= parseInt(prompt("Ingresa el número ${i + 1}:"));
          numeros.push(num);
          suma+=num;
         }
         let promedio=suma/cant;
         document.write(`Numeros ingresados: ${numeros}<br>`);
         document.write(`Promedio: ${promedio}`); 
-
 
     </script>
 </body>
