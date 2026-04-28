@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 19 - Manipulación de DOM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        #mi-parrafo {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #btn-cambiar {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #btn-cambiar:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <script>
-       
-    </script>
+
+    <div class="container">
+        <p id="mi-parrafo">ejercicio 19 eugenia arias.</p>
+        <button id="btn-cambiar">Cambiar Contenido</button>
+    </div>
+
+    <script type="module" src="js/ejercicio19.js"></script>
 </body>
 </html>
