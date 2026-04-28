@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21 - Listas Desplegables</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e9ecef;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 { text-align: center; color: #333; }
+        .campo { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+        }
+        select:focus { border-color: #007bff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Ubicaciones</h2>
+        
+        <div class="campo">
+            <label for="paises">Seleccione un País:</label>
+            <select id="paises">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+                <option value="Perú">Perú</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="capitales">Capital correspondiente:</label>
+            <select id="capitales" disabled>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Brasilia">Brasilia</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Ciudad de México">Ciudad de México</option>
+                <option value="Lima">Lima</option>
+            </select>
+        </div>
+    </div>
+
+    <script type="module" src="js/ejercicio21.js"></script>
+</body>
+</html>
