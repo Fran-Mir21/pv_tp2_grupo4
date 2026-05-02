@@ -8,9 +8,7 @@ const contador = document.querySelector('#contador-chars');
 input.addEventListener('input', (e) => {
     const valor = e.target.value;
 
-    // Ejecutamos la lógica de visualización y colores
     procesarEntrada(valor, salida, visor);
 
-    // Actualizamos el contador de caracteres
     actualizarContador(valor.length, contador);
 });
